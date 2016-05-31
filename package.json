@@ -1,0 +1,42 @@
+{
+  "description": "Simple Linux Traffic Control",
+  "version": "0.0.1",
+  "bin": "./bin/sltc.js",
+  "main": "./lib/sltc.js",
+  "dependencies": {
+    "bluebird": "3.4.0",
+    "hasbin": "1.2.2",
+    "minimist": "1.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "chai-as-promised": "^5.1.0",
+    "eslint": "^2.9.0",
+    "mocha": "^2.5.2"
+  },
+  "engines": {
+    "node": ">=4.3.0"
+  },
+  "main": "./lib/sltc.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ."
+  },
+  "name": "sltc",
+  "contributors": [
+    {
+      "name": "Tobias Lidskog"
+    },
+    {
+      "name": "Peter Hedenskog"
+    },
+    {
+      "name": "Jonathan Lee"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sitespeedio/sltc.git"
+  },
+  "license": "MIT"
+}
