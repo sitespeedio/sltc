@@ -1,6 +1,6 @@
 {
   "description": "Simple Linux Traffic Control",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "bin": "./bin/sltc.js",
   "main": "./lib/sltc.js",
   "dependencies": {
@@ -19,7 +19,6 @@
   "engines": {
     "node": ">=4.3.0"
   },
-  "main": "./lib/sltc.js",
   "scripts": {
     "test": "mocha",
     "lint": "eslint ."
