@@ -1,6 +1,6 @@
 {
   "description": "Simple Linux Traffic Control",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "bin": "./bin/sltc.js",
   "main": "./lib/sltc.js",
   "dependencies": {
