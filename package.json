@@ -4,7 +4,6 @@
   "bin": "./bin/sltc.js",
   "main": "./lib/sltc.js",
   "dependencies": {
-    "bluebird": "3.4.0",
     "hasbin": "1.2.2",
     "intel": "^1.1.0",
     "lodash.merge": "^4.4.0",
