@@ -1,0 +1,12 @@
+sudo: required
+
+services:
+  - docker
+
+language: nodejs
+
+before_install:
+- docker build -t sitespeedio/sltc .
+
+script:
+- docker run sitespeedio/sltc
