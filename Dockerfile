@@ -13,4 +13,4 @@ WORKDIR /
 
 COPY docker/start.sh /start.sh
 
-ENTRYPOINT ["/start.sh"]
+ENTRYPOINT ["/bin/bash"]
