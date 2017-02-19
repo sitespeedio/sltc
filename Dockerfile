@@ -12,5 +12,6 @@ COPY . /usr/src/app
 WORKDIR /
 
 COPY docker/start.sh /start.sh
+COPY docker/setup-tc.sh /setup-tc.sh
 
 ENTRYPOINT ["/start.sh"]
