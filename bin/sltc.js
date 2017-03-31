@@ -13,13 +13,20 @@ if (argv.help) {
   console.log('   Usage: sltc [options] \n');
   console.log('   Options:');
   console.log('   --device                  The device to use [eth0]');
-  console.log('   --bandwidth               Bandwidth [5Mbps] ');
+  console.log('   --bandwidth.download      Download bandwidth [5Mbps] ');
+  console.log('   --bandwidth.upload        Upload bandwidth [1.6Mbps] ');
   console.log('   --latency                 Latency [28ms]');
   console.log('   --pl                      Packet loss in percent [0%] ');
   console.log('   --remove                  Remove tc current rules');
   console.log('   --modprobe                Use tc together with modprobe');
 } else {
-  if (!hasbin.all.sync(['tc'])) {
+  if (argv.modprobe) {
+    if (!hasbin.all.sync(['tc', 'modprobe', 'ip'])) {
+      console.error('You need to have tc, modprobe and ip in your path to do traffic control');
+    } else {
+      sltc(argv);
+    }
+  } else if (!hasbin.all.sync(['tc'])) {
     console.error('You need to have tc in your path to do traffic control');
   } else {
     sltc(argv);
