@@ -17,6 +17,7 @@ if (argv.help) {
   console.log('   --latency                 Latency [28ms]');
   console.log('   --pl                      Packet loss in percent [0%] ');
   console.log('   --remove                  Remove tc current rules');
+  console.log('   --modprobe                Use tc together with modprobe');
 } else {
   if (!hasbin.all.sync(['tc'])) {
     console.error('You need to have tc in your path to do traffic control');
